@@ -3,4 +3,5 @@ project(duomenu_visi)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(duomenu_visi pirma_uzduotys.cpp)
+add_executable(duomenu_visi pirma_uzduotys.cpp
+        3_uzduotys.cpp)
