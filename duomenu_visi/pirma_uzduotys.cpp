@@ -1,24 +1,24 @@
+#include <iomanip>
 #include <iostream>
 #include <string>
-using namespace std;
 
+using namespace std;
 
 int main() {
 
-    string vardas ="1";
-    string pavarde="2";
-    int amzius= 3;
-    int grupe= 4;
-    int kursas= 5;
-    string studiju_programos_pavadinimas="6";
+    string password;
 
+    do {
+        cout << "Iveskite 8 simboliu slaptazodi: ";
+        cin >> password;
 
+        if (password.length() < 8) {
+            cout << "Slaptazodis turi buti maziausiai 8 simboliu." << endl;
+        }
 
+    } while (password.length() < 8);
 
-    const auto lang = "C++";
-
-        cout << vardas <<" "<<  pavarde <<" "<< amzius <<" "<< grupe <<" "<< kursas <<" "<< studiju_programos_pavadinimas<< endl;
-
+    cout << "Slaptazodis priimtas" << endl;
 
     return 0;
 }
